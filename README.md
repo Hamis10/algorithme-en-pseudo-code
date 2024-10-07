@@ -1,0 +1,24 @@
+Début
+    # les varaibles d'entrée
+    Entrée: argent, prix
+
+    # condition si les valeurs sont superieures à 0
+    Si argent > 0 OU prix > 0 Alors
+        retourner vrai
+    Sinon 
+         retourner faux
+        Fin si
+
+    # nombre de bonbons
+    bonbons ← 0
+
+    #  argent pour acheter un bonbon
+    Tant que argent >= prix Faire
+        argent ← argent - prix  # Soustrait prix du bonbon
+        bonbons ← bonbons + 1   # Ajoute nombre de bonbons
+
+    Fin Tant que
+
+    # résultat
+    Donne "Nombre bonbons achetés : ", bonbons
+Fin
